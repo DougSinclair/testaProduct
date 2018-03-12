@@ -1,5 +1,6 @@
 public class Product {
 
+//random
 	private String codigo = "";
 	private String descricao = "";
 	private double custo = 0.00;
