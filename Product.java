@@ -6,6 +6,16 @@ public class Product {
 	private double custo = 0.00;
 	private double valor = 0.00;
 
+
+	public Product(){}
+	public Product(String codigo,String descricao){
+		this.codigo = codigo;
+		this.descricao = descricao;
+	}
+	public Product(String codigo,String descricao,double custo,double valor){}
+
+
+
 	public String getCodigo(){
 		return codigo;
 	}
@@ -33,8 +43,8 @@ public class Product {
 
 	public void mostraDados () {
 
-		System.out.println ( "codigo:" + this.codigo);
-		System.out.println ( "descricao:" + this.descricao);
+		System.out.println ( "código:" + this.codigo);
+		System.out.println ( "descrição:" + this.descricao);
 		System.out.println ( "custo:" + this.custo);
 		System.out.println ( "valor:" + this.valor);
 	}
