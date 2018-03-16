@@ -1,21 +1,28 @@
 public class Product {
 
 //random
+	
 	private String codigo = "";
 	private String descricao = "";
-	private double custo = 0.00;
-	private double valor = 0.00;
+	private double custo = 5.00;
+	private double valor = 6.00;
+
 
 
 	public Product(){}
+
 	public Product(String codigo,String descricao){
 		this.codigo = codigo;
 		this.descricao = descricao;
-	}
-	public Product(String codigo,String descricao,double custo,double valor){}
-
-
-
+        }
+	
+	public Product(String codigo,String descricao,double custo,double valor){
+		this.codigo = codigo;
+		this.descricao = descricao;
+		this.custo = custo;
+		this.valor = valor;
+        }
+		
 	public String getCodigo(){
 		return codigo;
 	}
@@ -41,7 +48,16 @@ public class Product {
 		this.valor = valor ;
 	}
 
+
 	public void mostraDados () {
+
+		System.out.println ( "código:" + this.codigo);
+		System.out.println ( "descrição:" + this.descricao);
+		System.out.println ( "custo:" + this.custo);
+		System.out.println ( "valor:" + this.valor);
+	}
+
+	public void mostraDados2 () {
 
 		System.out.println ( "código:" + this.codigo);
 		System.out.println ( "descrição:" + this.descricao);
